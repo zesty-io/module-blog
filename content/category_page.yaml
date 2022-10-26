@@ -1,0 +1,20 @@
+
+  - id: "26cd-948d-a634"
+    web:
+      metaDescription: ""
+      metaTitle: "Category Page"
+      metaLinkText: "Category Page"
+      metaKeywords: null
+      pathPart: "category-page"
+      path: "/blog/category-page/"
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/blog/"
+    meta:
+      sort: 1
+      listed: true
+    data:
+      category_page_description: null
+      category_page_title: null

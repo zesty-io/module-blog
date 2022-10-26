@@ -1,0 +1,20 @@
+
+  - id: "016b-b2bb-7a1e"
+    web:
+      metaDescription: ""
+      metaTitle: "Authors Page"
+      metaLinkText: "Authors Page"
+      metaKeywords: null
+      pathPart: "authors-page"
+      path: "/blog/authors-page/"
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/blog/"
+    meta:
+      sort: 2
+      listed: true
+    data:
+      authors_page_description: null
+      authors_page_title: null

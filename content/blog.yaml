@@ -1,0 +1,20 @@
+
+  - id: "26ff-cf42-76c9"
+    web:
+      metaDescription: ""
+      metaTitle: "Blog"
+      metaLinkText: "Blog"
+      metaKeywords: null
+      pathPart: "blog"
+      path: "/blog/"
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/"
+    meta:
+      sort: 101
+      listed: true
+    data:
+      blog_description: null
+      blog_title: null
