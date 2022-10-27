@@ -1,280 +1,310 @@
-- description: ""
-  label: "Category Page"
-  name: "category_page"
-  sort: 102
-  listed: true
-  hasRoute: true
-  showAsTable: false
-  parent: "blog"
-  view: "/views/category_page.tpl"
-  content: "/content/category_page.yaml"
-  fields:
-    - name: "category_page_title"
-      label: "Category Page Title"
-      description: ""
-      datatype: "text"
-      sort: 10000
-      required: true
-      relationship: null
-      settings:
-        list: true
-    - name: "category_page_description"
-      label: "Category Page Description"
-      description: ""
-      datatype: "wysiwyg_basic"
-      sort: 10000
-      required: false
-      relationship: null
-      settings:
-        list: true
-- description: ""
-  label: "Categories"
-  name: "categories"
-  sort: 104
-  listed: true
-  hasRoute: true
-  showAsTable: true
-  parent: "category_page"
-  view: "/views/categories.tpl"
-  content: "/content/categories.yaml"
-  fields:
-    - name: "category_name"
-      label: "Category Name"
-      description: ""
-      datatype: "text"
-      sort: 10000
-      required: true
-      relationship: null
-      settings:
-        list: true
-    - name: "sort_order"
-      label: "Sort Order"
-      description: ""
-      datatype: "sort"
-      sort: 10000
-      required: false
-      relationship: null
-      settings:
-        list: true
-- description: ""
-  label: "Authors Page"
-  name: "authors_page"
-  sort: 105
-  listed: true
-  hasRoute: true
-  showAsTable: false
-  parent: "blog"
-  view: "/views/authors_page.tpl"
-  content: "/content/authors_page.yaml"
-  fields:
-    - name: "authors_page_title"
-      label: "Authors Page Title"
-      description: ""
-      datatype: "text"
-      sort: 10000
-      required: true
-      relationship: null
-      settings:
-        list: true
-    - name: "authors_page_description"
-      label: "Authors Page Description"
-      description: ""
-      datatype: "wysiwyg_basic"
-      sort: 10000
-      required: false
-      relationship: null
-      settings:
-        list: true
-- description: ""
-  label: "Authors"
-  name: "authors"
-  sort: 107
-  listed: true
-  hasRoute: true
-  showAsTable: true
-  parent: "authors_page"
-  view: "/views/authors.tpl"
-  content: "/content/authors.yaml"
-  fields:
-    - name: "authors_name"
-      label: "Authors Name"
-      description: ""
-      datatype: "text"
-      sort: 10000
-      required: true
-      relationship: null
-      settings:
-        list: true
-    - name: "authors_email"
-      label: "Authors Email"
-      description: ""
-      datatype: "text"
-      sort: 10000
-      required: false
-      relationship: null
-      settings:
-        list: true
-    - name: "authors_image"
-      label: "Authors Image"
-      description: ""
-      datatype: "images"
-      sort: 10000
-      required: false
-      relationship: null
-      settings:
-        list: true
-- description: ""
-  label: "Tag Page"
-  name: "tag_page"
-  sort: 108
-  listed: true
-  hasRoute: true
-  showAsTable: false
-  parent: "blog"
-  view: "/views/tag_page.tpl"
-  content: "/content/tag_page.yaml"
-  fields:
-    - name: "tag_page_title"
-      label: "Tag Page Title"
-      description: ""
-      datatype: "text"
-      sort: 10000
-      required: true
-      relationship: null
-      settings:
-        list: true
-    - name: "tag_page_description"
-      label: "Tag Page Description"
-      description: ""
-      datatype: "wysiwyg_basic"
-      sort: 10000
-      required: false
-      relationship: null
-      settings:
-        list: true
-- description: ""
-  label: "Tag"
-  name: "tag"
-  sort: 110
-  listed: true
-  hasRoute: true
-  showAsTable: true
-  parent: "tag_page"
-  view: "/views/tag.tpl"
-  content: "/content/tag.yaml"
-  fields:
-    - name: "tag_name"
-      label: "Tag Name"
-      description: ""
-      datatype: "text"
-      sort: 10000
-      required: true
-      relationship: null
-      settings:
-        list: true
-    - name: "sort_order"
-      label: "Sort Order"
-      description: ""
-      datatype: "sort"
-      sort: 10000
-      required: false
-      relationship: null
-      settings:
-        list: true
-- description: ""
-  label: "Articles"
-  name: "articles"
-  sort: 0
-  listed: true
-  hasRoute: true
-  showAsTable: true
-  parent: "blog"
-  view: "/views/articles.tpl"
-  content: "/content/articles.yaml"
-  fields:
-    - name: "article_title"
-      label: "Article Title"
-      description: ""
-      datatype: "text"
-      sort: 10000
-      required: true
-      relationship: null
-      settings:
-        list: true
-    - name: "article_sub_title"
-      label: "Article Sub Title"
-      description: ""
-      datatype: "text"
-      sort: 10000
-      required: false
-      relationship: null
-      settings:
-        list: true
-    - name: "article_content"
-      label: "Article Content"
-      description: ""
-      datatype: "article_writer"
-      sort: 10000
-      required: true
-      relationship: null
-      settings:
-        list: true
-    - name: "article_feature_image"
-      label: "Article Feature Image"
-      description: ""
-      datatype: "images"
-      sort: 10000
-      required: false
-      relationship: null
-      settings:
-        list: true
-    - name: "caption"
-      label: "Caption"
-      description: ""
-      datatype: "textarea"
-      sort: 10000
-      required: false
-      relationship: null
-      settings:
-        list: true
-    - name: "article_images"
-      label: "Article Images"
-      description: ""
-      datatype: "images"
-      sort: 10000
-      required: false
-      relationship: null
-      settings:
-        limit: "10"
-        list: true
-    - name: "author"
-      label: "Author"
-      description: ""
-      datatype: "one_to_one"
-      sort: 10000
-      required: true
-      relationship:
-        name: "authors"
-        display: "authors_name"
-      settings:
-        list: true
-    - name: "article_tags"
-      label: "Article Tags"
-      description: ""
-      datatype: "one_to_many"
-      sort: 10000
-      required: false
-      relationship:
-        name: "tag"
-        display: "tag_name"
-      settings:
-        list: true
-    - name: "date"
-      label: "Date"
-      description: ""
-      datatype: "date"
-      sort: 10000
-      required: false
-      relationship: null
-      settings:
-        list: true
+
+  - description: ""
+    label: "Blog"
+    name: "blog"
+    sort: 100
+    listed: true
+    hasRoute: true
+    showAsTable: false
+    parent: null
+    view: "/views/blog.tpl"
+    content: "/content/blog.yaml"
+    fields:
+      - name: "blog_title"
+        label: "Blog Title"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: true
+        relationship: null
+        settings:
+          list: true
+      - name: "blog_description"
+        label: "Blog Description"
+        description: ""
+        datatype: "wysiwyg_basic"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          list: true
+  - description: ""
+    label: "Category Page"
+    name: "category_page"
+    sort: 102
+    listed: true
+    hasRoute: true
+    showAsTable: false
+    parent: "blog"
+    view: "/views/category_page.tpl"
+    content: "/content/category_page.yaml"
+    fields:
+      - name: "category_page_title"
+        label: "Category Page Title"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: true
+        relationship: null
+        settings:
+          list: true
+      - name: "category_page_description"
+        label: "Category Page Description"
+        description: ""
+        datatype: "wysiwyg_basic"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          list: true
+  - description: ""
+    label: "Categories"
+    name: "categories"
+    sort: 104
+    listed: true
+    hasRoute: true
+    showAsTable: true
+    parent: "category_page"
+    view: "/views/categories.tpl"
+    content: "/content/categories.yaml"
+    fields:
+      - name: "category_name"
+        label: "Category Name"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: true
+        relationship: null
+        settings:
+          list: true
+      - name: "sort_order"
+        label: "Sort Order"
+        description: ""
+        datatype: "sort"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          list: true
+  - description: ""
+    label: "Authors Page"
+    name: "authors_page"
+    sort: 105
+    listed: true
+    hasRoute: true
+    showAsTable: false
+    parent: "blog"
+    view: "/views/authors_page.tpl"
+    content: "/content/authors_page.yaml"
+    fields:
+      - name: "authors_page_title"
+        label: "Authors Page Title"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: true
+        relationship: null
+        settings:
+          list: true
+      - name: "authors_page_description"
+        label: "Authors Page Description"
+        description: ""
+        datatype: "wysiwyg_basic"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          list: true
+  - description: ""
+    label: "Authors"
+    name: "authors"
+    sort: 107
+    listed: true
+    hasRoute: true
+    showAsTable: true
+    parent: "authors_page"
+    view: "/views/authors.tpl"
+    content: "/content/authors.yaml"
+    fields:
+      - name: "authors_name"
+        label: "Authors Name"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: true
+        relationship: null
+        settings:
+          list: true
+      - name: "authors_email"
+        label: "Authors Email"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          list: true
+      - name: "authors_image"
+        label: "Authors Image"
+        description: ""
+        datatype: "images"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          list: true
+  - description: ""
+    label: "Tag Page"
+    name: "tag_page"
+    sort: 108
+    listed: true
+    hasRoute: true
+    showAsTable: false
+    parent: "blog"
+    view: "/views/tag_page.tpl"
+    content: "/content/tag_page.yaml"
+    fields:
+      - name: "tag_page_title"
+        label: "Tag Page Title"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: true
+        relationship: null
+        settings:
+          list: true
+      - name: "tag_page_description"
+        label: "Tag Page Description"
+        description: ""
+        datatype: "wysiwyg_basic"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          list: true
+  - description: ""
+    label: "Tag"
+    name: "tag"
+    sort: 110
+    listed: true
+    hasRoute: true
+    showAsTable: true
+    parent: "tag_page"
+    view: "/views/tag.tpl"
+    content: "/content/tag.yaml"
+    fields:
+      - name: "tag_name"
+        label: "Tag Name"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: true
+        relationship: null
+        settings:
+          list: true
+      - name: "sort_order"
+        label: "Sort Order"
+        description: ""
+        datatype: "sort"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          list: true
+  - description: ""
+    label: "Articles"
+    name: "articles"
+    sort: 0
+    listed: true
+    hasRoute: true
+    showAsTable: true
+    parent: "blog"
+    view: "/views/articles.tpl"
+    content: "/content/articles.yaml"
+    fields:
+      - name: "article_title"
+        label: "Article Title"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: true
+        relationship: null
+        settings:
+          list: true
+      - name: "article_sub_title"
+        label: "Article Sub Title"
+        description: ""
+        datatype: "text"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          list: true
+      - name: "article_content"
+        label: "Article Content"
+        description: ""
+        datatype: "article_writer"
+        sort: 10000
+        required: true
+        relationship: null
+        settings:
+          list: true
+      - name: "article_feature_image"
+        label: "Article Feature Image"
+        description: ""
+        datatype: "images"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          list: true
+      - name: "caption"
+        label: "Caption"
+        description: ""
+        datatype: "textarea"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          list: true
+      - name: "article_images"
+        label: "Article Images"
+        description: ""
+        datatype: "images"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          limit: "10"
+          list: true
+      - name: "author"
+        label: "Author"
+        description: ""
+        datatype: "one_to_one"
+        sort: 10000
+        required: true
+        relationship:
+          name: "authors"
+          display: "authors_name"
+        settings:
+          list: true
+      - name: "article_tags"
+        label: "Article Tags"
+        description: ""
+        datatype: "one_to_many"
+        sort: 10000
+        required: false
+        relationship:
+          name: "tag"
+          display: "tag_name"
+        settings:
+          list: true
+      - name: "date"
+        label: "Date"
+        description: ""
+        datatype: "date"
+        sort: 10000
+        required: false
+        relationship: null
+        settings:
+          list: true
