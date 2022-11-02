@@ -1,5 +1,5 @@
 
-  - id: "fc0e-9fbe-f93f"
+  - id: "9fab-5f6d-22e3"
     web:
       metaDescription: ""
       metaTitle: "Tag Page"
@@ -16,5 +16,5 @@
       sort: 3
       listed: true
     data:
-      tag_page_description: null
-      tag_page_title: null
+      tag_page_description: "<p>List of Tags</p>"
+      tag_page_title: "Tags"

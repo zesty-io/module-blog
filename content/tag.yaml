@@ -1,1 +1,20 @@
-[]
+
+  - id: "f2c4-3304-1aa9"
+    web:
+      metaDescription: ""
+      metaTitle: "trends"
+      metaLinkText: "trends"
+      metaKeywords: null
+      pathPart: "trends"
+      path: "/blog/tag-page/trends/"
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/blog/tag-page/"
+    meta:
+      sort: 117
+      listed: true
+    data:
+      sort_order: null
+      tag_name: "trends"

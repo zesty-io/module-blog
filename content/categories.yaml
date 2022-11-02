@@ -1,1 +1,58 @@
-[]
+
+  - id: "6ee1-c2ed-6993"
+    web:
+      metaDescription: ""
+      metaTitle: "Lifestyle"
+      metaLinkText: "Lifestyle"
+      metaKeywords: null
+      pathPart: "lifestyle"
+      path: "/blog/category-page/lifestyle/"
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/blog/category-page/"
+    meta:
+      sort: 114
+      listed: true
+    data:
+      category_name: "Lifestyle"
+      sort_order: 2
+  - id: "1707-d8b9-814a"
+    web:
+      metaDescription: ""
+      metaTitle: "Business"
+      metaLinkText: "Business"
+      metaKeywords: null
+      pathPart: "business"
+      path: "/blog/category-page/business/"
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/blog/category-page/"
+    meta:
+      sort: 113
+      listed: true
+    data:
+      category_name: "Business"
+      sort_order: 1
+  - id: "c1ac-131c-f2f5"
+    web:
+      metaDescription: ""
+      metaTitle: "Technology"
+      metaLinkText: "Technology"
+      metaKeywords: null
+      pathPart: "technology"
+      path: "/blog/category-page/technology/"
+      sitemapPriority: -1
+      canonicalTagMode: 1
+      canonicalQueryParamWhitelist: null
+      canonicalTagCustomValue: null
+      parent: "/blog/category-page/"
+    meta:
+      sort: 112
+      listed: true
+    data:
+      category_name: "Technology"
+      sort_order: null

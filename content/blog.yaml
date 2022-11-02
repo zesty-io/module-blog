@@ -1,5 +1,5 @@
 
-  - id: "fe01-dea1-ca79"
+  - id: "bd6e-90a3-33b2"
     web:
       metaDescription: ""
       metaTitle: "Blog"
@@ -17,4 +17,4 @@
       listed: true
     data:
       blog_description: null
-      blog_title: null
+      blog_title: "My Personal Blog"

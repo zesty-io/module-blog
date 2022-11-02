@@ -1,5 +1,5 @@
 
-  - id: "0aea-d856-85ae"
+  - id: "1e25-2392-dd8a"
     web:
       metaDescription: ""
       metaTitle: "Category Page"
@@ -16,5 +16,5 @@
       sort: 1
       listed: true
     data:
-      category_page_description: null
-      category_page_title: null
+      category_page_description: "<p>List of all categories</p>"
+      category_page_title: "Categories"

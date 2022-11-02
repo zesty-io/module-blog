@@ -1,5 +1,5 @@
 
-  - id: "091a-c636-5cf9"
+  - id: "b695-24d6-aab7"
     web:
       metaDescription: ""
       metaTitle: "Authors Page"
@@ -16,5 +16,5 @@
       sort: 2
       listed: true
     data:
-      authors_page_description: null
-      authors_page_title: null
+      authors_page_description: "<p>List of all Authors</p>"
+      authors_page_title: "Authors "

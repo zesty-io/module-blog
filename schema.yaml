@@ -1,5 +1,5 @@
 
-  - description: ""
+  - description: null
     label: "Blog"
     name: "blog"
     sort: 100
@@ -14,8 +14,8 @@
         label: "Blog Title"
         description: ""
         datatype: "text"
-        sort: 10000
-        required: true
+        sort: 1
+        required: false
         relationship: null
         settings:
           list: true
@@ -23,12 +23,12 @@
         label: "Blog Description"
         description: ""
         datatype: "wysiwyg_basic"
-        sort: 10000
+        sort: 2
         required: false
         relationship: null
         settings:
           list: true
-  - description: ""
+  - description: null
     label: "Category Page"
     name: "category_page"
     sort: 102
@@ -43,8 +43,8 @@
         label: "Category Page Title"
         description: ""
         datatype: "text"
-        sort: 10000
-        required: true
+        sort: 1
+        required: false
         relationship: null
         settings:
           list: true
@@ -52,12 +52,12 @@
         label: "Category Page Description"
         description: ""
         datatype: "wysiwyg_basic"
-        sort: 10000
+        sort: 2
         required: false
         relationship: null
         settings:
           list: true
-  - description: ""
+  - description: null
     label: "Categories"
     name: "categories"
     sort: 104
@@ -72,8 +72,8 @@
         label: "Category Name"
         description: ""
         datatype: "text"
-        sort: 10000
-        required: true
+        sort: 1
+        required: false
         relationship: null
         settings:
           list: true
@@ -81,12 +81,12 @@
         label: "Sort Order"
         description: ""
         datatype: "sort"
-        sort: 10000
+        sort: 2
         required: false
         relationship: null
         settings:
           list: true
-  - description: ""
+  - description: null
     label: "Authors Page"
     name: "authors_page"
     sort: 105
@@ -101,8 +101,8 @@
         label: "Authors Page Title"
         description: ""
         datatype: "text"
-        sort: 10000
-        required: true
+        sort: 1
+        required: false
         relationship: null
         settings:
           list: true
@@ -110,12 +110,12 @@
         label: "Authors Page Description"
         description: ""
         datatype: "wysiwyg_basic"
-        sort: 10000
+        sort: 2
         required: false
         relationship: null
         settings:
           list: true
-  - description: ""
+  - description: null
     label: "Authors"
     name: "authors"
     sort: 107
@@ -130,8 +130,8 @@
         label: "Authors Name"
         description: ""
         datatype: "text"
-        sort: 10000
-        required: true
+        sort: 1
+        required: false
         relationship: null
         settings:
           list: true
@@ -139,7 +139,7 @@
         label: "Authors Email"
         description: ""
         datatype: "text"
-        sort: 10000
+        sort: 2
         required: false
         relationship: null
         settings:
@@ -148,12 +148,12 @@
         label: "Authors Image"
         description: ""
         datatype: "images"
-        sort: 10000
+        sort: 3
         required: false
         relationship: null
         settings:
           list: true
-  - description: ""
+  - description: null
     label: "Tag Page"
     name: "tag_page"
     sort: 108
@@ -168,8 +168,8 @@
         label: "Tag Page Title"
         description: ""
         datatype: "text"
-        sort: 10000
-        required: true
+        sort: 1
+        required: false
         relationship: null
         settings:
           list: true
@@ -177,12 +177,12 @@
         label: "Tag Page Description"
         description: ""
         datatype: "wysiwyg_basic"
-        sort: 10000
+        sort: 2
         required: false
         relationship: null
         settings:
           list: true
-  - description: ""
+  - description: null
     label: "Tag"
     name: "tag"
     sort: 110
@@ -197,8 +197,8 @@
         label: "Tag Name"
         description: ""
         datatype: "text"
-        sort: 10000
-        required: true
+        sort: 1
+        required: false
         relationship: null
         settings:
           list: true
@@ -206,15 +206,15 @@
         label: "Sort Order"
         description: ""
         datatype: "sort"
-        sort: 10000
+        sort: 2
         required: false
         relationship: null
         settings:
           list: true
-  - description: ""
+  - description: null
     label: "Articles"
     name: "articles"
-    sort: 0
+    sort: 111
     listed: true
     hasRoute: true
     showAsTable: true
@@ -226,8 +226,8 @@
         label: "Article Title"
         description: ""
         datatype: "text"
-        sort: 10000
-        required: true
+        sort: 1
+        required: false
         relationship: null
         settings:
           list: true
@@ -235,7 +235,7 @@
         label: "Article Sub Title"
         description: ""
         datatype: "text"
-        sort: 10000
+        sort: 2
         required: false
         relationship: null
         settings:
@@ -244,8 +244,8 @@
         label: "Article Content"
         description: ""
         datatype: "article_writer"
-        sort: 10000
-        required: true
+        sort: 3
+        required: false
         relationship: null
         settings:
           list: true
@@ -253,7 +253,7 @@
         label: "Article Feature Image"
         description: ""
         datatype: "images"
-        sort: 10000
+        sort: 4
         required: false
         relationship: null
         settings:
@@ -262,7 +262,7 @@
         label: "Caption"
         description: ""
         datatype: "textarea"
-        sort: 10000
+        sort: 5
         required: false
         relationship: null
         settings:
@@ -271,7 +271,7 @@
         label: "Article Images"
         description: ""
         datatype: "images"
-        sort: 10000
+        sort: 6
         required: false
         relationship: null
         settings:
@@ -281,8 +281,8 @@
         label: "Author"
         description: ""
         datatype: "one_to_one"
-        sort: 10000
-        required: true
+        sort: 7
+        required: false
         relationship:
           name: "authors"
           display: "authors_name"
@@ -292,7 +292,7 @@
         label: "Article Tags"
         description: ""
         datatype: "one_to_many"
-        sort: 10000
+        sort: 8
         required: false
         relationship:
           name: "tag"
@@ -303,8 +303,19 @@
         label: "Date"
         description: ""
         datatype: "date"
-        sort: 10000
+        sort: 9
         required: false
         relationship: null
+        settings:
+          list: true
+      - name: "article_category"
+        label: "Article Category"
+        description: ""
+        datatype: "one_to_many"
+        sort: 10000
+        required: false
+        relationship:
+          name: "categories"
+          display: "category_name"
         settings:
           list: true
