@@ -32,13 +32,6 @@
 <div class="container">
     <div class="header">
         <h1>{{this.blog_title}}</h1>
-        <ul class="category">
-            {{each categories as cat limit 10 sort by cat.category_name asc}}
-                <li onclick="window.location='{{cat.getUrl()}}';">
-                    <a href="{{cat.getUrl()}}">{{cat.category_name}}</a>		
-                </li>
-            {{end-each}}
-        </ul>
     </div>
     <hr />
     <div class="articles">

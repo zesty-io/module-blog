@@ -258,25 +258,6 @@
         relationship: null
         settings:
           list: true
-      - name: "caption"
-        label: "Caption"
-        description: ""
-        datatype: "textarea"
-        sort: 5
-        required: false
-        relationship: null
-        settings:
-          list: true
-      - name: "article_images"
-        label: "Article Images"
-        description: ""
-        datatype: "images"
-        sort: 6
-        required: false
-        relationship: null
-        settings:
-          limit: "10"
-          list: true
       - name: "author"
         label: "Author"
         description: ""

@@ -1,5 +1,5 @@
 
-  - id: "6ee1-c2ed-6993"
+  - id: "5149-36c3-5b09"
     web:
       metaDescription: ""
       metaTitle: "Lifestyle"
@@ -18,7 +18,7 @@
     data:
       category_name: "Lifestyle"
       sort_order: 2
-  - id: "1707-d8b9-814a"
+  - id: "1337-384f-7441"
     web:
       metaDescription: ""
       metaTitle: "Business"
@@ -37,7 +37,7 @@
     data:
       category_name: "Business"
       sort_order: 1
-  - id: "c1ac-131c-f2f5"
+  - id: "e67b-645a-03da"
     web:
       metaDescription: ""
       metaTitle: "Technology"
