@@ -38,7 +38,7 @@
         {{each articles as article sort by date DESC limit 20}}
             <div class="article">
                 <div class="feature-image">
-                    <img src="{{article.article_feature_image.getImage(240,160,crop) }}"" />
+                    <img src="{{article.article_feature_image.getImage() }}" style="width:240px;" />
                 </div>
                 <div>
                     <h1 class="article-header">{{ article.article_title }}</h1>

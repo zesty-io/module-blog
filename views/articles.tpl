@@ -21,7 +21,7 @@
     }
     .image-fit{
         display : block;
-        width : 100%;
+        width : 240px;
     }
     .recent-article{
         margin-bottom : 50px;
@@ -40,7 +40,7 @@
     <div class="body-container">
         <div class="content-container">
             <section>
-                <img src="{{this.article_feature_image.getImage(600)}}" />
+                <img src="{{this.article_feature_image.getImage()}}" style="width:600px;margin:auto;display:block;" />
                 {{ this.article_content }}
             <section>
         </div>
@@ -58,7 +58,7 @@
                 <h3>Recent Article</h3>
                 {{each articles as latest where z.zuid != '{this.zuid}' limit 3 }}
                     <div class="recent-article">
-                        <a href="#"><img class="image-fit" src="{{latest.article_feature_image.getImage(240,160,crop) }}" alt="" /></a>
+                        <a href="#"><img class="image-fit" src="{{latest.article_feature_image.getImage() }}" alt="" /></a>
                             <h3>{{latest.article_title}}</h3>
                             {{latest.article_content.subwords(20)}}...<a href="{{latest.getUrl()}}">Read More</a>
                         </a>
